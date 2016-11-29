@@ -1,0 +1,13 @@
+{
+  "name": "JS-Nightwatch.js",
+  "version": "0.0.0",
+  "description": "Parallel tests nigtwatch  =============",
+  "main": "",
+  "scripts": {
+    "test": "nightwatch --test tests/guineaPig.js"
+  },
+  "devDependencies": {
+    "saucelabs": "1.3.0",
+    "nightwatch": "0.9.8"
+  }
+}

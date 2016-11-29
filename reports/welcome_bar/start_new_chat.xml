@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="start_new_chat"
+    errors="1" failures="0" hostname="" id="" package="welcome_bar" skipped="0"
+    tests="1" time="1.018" timestamp="Mon, 28 Nov 2016 22:00:05 GMT">
+  
+    <testcase name="Start a new chat session" time="1.018" assertions="0">
+    </testcase>
+      <system-err>
+          Error while running [Welcome Bar / Start New Chat / Start a new chat session]:
+
+  TypeError: client.page.testpage.load(...).page.testpage.openWelcomebar(...).page.testpage.startnNewChat is not a function
+    at Object.Start a new chat session (/Users/dsteele/dev/remote/sauce_labs/JS-Nightwatch.js/tests/welcome_bar/start_new_chat.js:13:22)
+    at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+      </system-err>
+  
+  
+  </testsuite>
+</testsuites>

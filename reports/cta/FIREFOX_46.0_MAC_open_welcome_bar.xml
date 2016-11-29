@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="open_welcome_bar"
+    errors="0" failures="0" hostname="" id="" package="cta" skipped="0"
+    tests="1" time="17.75" timestamp="Mon, 28 Nov 2016 21:15:31 GMT">
+  
+    <testcase name="User is able to open Welcome Bar" time="17.75" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

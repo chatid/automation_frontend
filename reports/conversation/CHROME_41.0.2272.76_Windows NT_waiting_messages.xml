@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="waiting_messages"
+    errors="0" failures="0" hostname="" id="" package="conversation" skipped="0"
+    tests="1" time="30.27" timestamp="Tue, 29 Nov 2016 21:58:54 GMT">
+  
+    <testcase name="Scroll up to see waiting messages" time="30.27" assertions="9">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

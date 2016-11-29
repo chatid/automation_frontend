@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="waiting_messages"
+    errors="1" failures="0" hostname="" id="" package="conversation" skipped="0"
+    tests="1" time="1.022" timestamp="Tue, 29 Nov 2016 22:03:09 GMT">
+  
+    <testcase name="Scroll up to see waiting messages" time="1.022" assertions="0">
+    </testcase>
+      <system-err>
+          Error while running [Conversation / Waiting Messages / Scroll up to see waiting messages]:
+
+  ReferenceError: document is not defined
+    at Object.scrolltoMessagesWaiting (/Users/dsteele/dev/remote/sauce_labs/JS-Nightwatch.js/pages/testpage.js:71:33)
+    at Object.Scroll up to see waiting messages (/Users/dsteele/dev/remote/sauce_labs/JS-Nightwatch.js/tests/conversation/waiting_messages.js:18:24)
+    at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:125:13)
+      </system-err>
+  
+  
+  </testsuite>
+</testsuites>

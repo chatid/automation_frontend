@@ -1,0 +1,8 @@
+{
+  "urls": {
+    "testpage": "http://demo.chatid.com.s3.amazonaws.com/chatbar/dev/BAR-234-test-target/index.html#"
+  },
+  "messages": {
+  	"test_message": "this is a test"
+  }
+}

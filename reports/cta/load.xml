@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="4">
+
+  <testsuite name="load"
+    errors="1" failures="0" hostname="" id="" package="cta" skipped="3"
+    tests="4" time="1.016" timestamp="Mon, 28 Nov 2016 19:34:27 GMT">
+  
+    <testcase name="CTA Renders With Agents Available" time="1.016" assertions="0">
+    </testcase>
+      <system-err>
+          Error while running [Cta / Load / CTA Renders With Agents Available]:
+
+  /Users/dsteele/dev/remote/sauce_labs/JS-Nightwatch.js/pages/testpage.js:3
+var url = .client.globals.url;
+          ^
+SyntaxError: Unexpected token .
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:528:28)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at requireDir (/Users/dsteele/dev/remote/sauce_labs/JS-Nightwatch.js/node_modules/require-dir/index.js:112:33)
+    at module.exports (/Users/dsteele/dev/remote/sauce_labs/JS-Nightwatch.js/node_modules/nightwatch-pages/lib/index.js:4:15)
+      </system-err>
+  
+  
+    
+    <testcase
+      name="User is able to open Welcome Bar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="User is able to minimize Welcome Bar">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="User is able to open a minimized Welcome Bar">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

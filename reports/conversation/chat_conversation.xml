@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="chat_conversation"
+    errors="1" failures="0" hostname="" id="" package="conversation" skipped="0"
+    tests="1" time="1.013" timestamp="Tue, 29 Nov 2016 21:20:34 GMT">
+  
+    <testcase name="Complete a chat conversation" time="1.013" assertions="0">
+    </testcase>
+      <system-err>
+          Error while running [Conversation / Chat Conversation / Complete a chat conversation]:
+
+  /Users/dsteele/dev/remote/sauce_labs/JS-Nightwatch.js/pages/testpage.js:60
+            .screenshot();
+            ^
+SyntaxError: Unexpected token .
+    at Object.exports.runInThisContext (vm.js:76:16)
+    at Module._compile (module.js:528:28)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at requireDir (/Users/dsteele/dev/remote/sauce_labs/JS-Nightwatch.js/node_modules/require-dir/index.js:112:33)
+    at module.exports (/Users/dsteele/dev/remote/sauce_labs/JS-Nightwatch.js/node_modules/nightwatch-pages/lib/index.js:4:15)
+      </system-err>
+  
+  
+  </testsuite>
+</testsuites>
