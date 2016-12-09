@@ -87,6 +87,28 @@ Pages are stored in /root/pages. Within the page object file you can write out t
 
 While this may seem like a trivial task on the surface, it is a fair bit harder than one might expect.
 
+### Test Location
+
+Tests are stored in:
+```
+/tests/DIR
+```
+
+Replace DIR with whatever makes sense for your testing structure. I had some trouble going more than one directory deep past DIR, so be forewarned.
+
+### Parallelism
+
+One of the reasons I chose Nightwatch as our framework was because of its built-in parallel test runner. To enable parallel tests, in the nightwatch.json file, add the following line:
+```
+"test_workers" : {"enabled" : true, "workers" : "auto"}
+```
+
+Enabled turns on parallelism and workers sets the number of child processes. The above line should be the default. Auto will scale up to as many workers as can be created. For running on Sauce Labs or BrowserStack, this is a good standard to follow.
+
+Each test should be broken out into its own file. Doing so allows the worker handler to ingest each file and spin up a new child process for that test.
+
+Your testing should take about as long as your longest test takes to run (assuming no child process limits).
+
 #### Locators
 CSS - These are to be considered the gold standard. Use them if at all possible. In Nightwatch you can invoke searching by CSS as follows:
 ```
@@ -102,8 +124,53 @@ Then paste in the XPath locator.
 
 To find the correct CSS or XPath locator, use Chrome Inspector. If you right click on a piece of code and select copy, you will see options to copy the selector (CSS) or XPath.
 
+#### Mocha
+Although we have not setup any Mocha tests yet, I would recommend using [Mocha](https://mochajs.org/) for unit testing of individual Javascript functions across multiple browsers.
+
+Nightwatch is compatible with Mocha's Exports interface, so you can write tests in Mocha and then run them inside Nightwatch.
+
+Mocha example:
+```
+var arr=[];arr.push('foo');arr.push('bar');expect(arr[0]).to.equal('foo');expect(arr[1]).to.equal('bar');}
+```
+
+In this example, the function .push should append values foo and bar and then expects the arr[0] element to be equal to foo and arr[1] to be equal to bar. This testing can be applied to arbitrary Javascript functions.
+
+Another Mocha example:
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tests</title>
+  <link href="../node_modules/mocha/mocha.css" rel="stylesheet" />
+  <script src="../node_modules/mocha/mocha.js"></script>
+</head>
+<body>
+
+  <!-- A container element for the visual Mocha results -->
+  <div id="mocha"></div>
+
+  <!-- Mocha setup and initiation code -->
+  <script>
+  mocha.setup('bdd');
+  window.onload = function() {
+    mocha.run();
+  };
+  </script>
+
+  <!-- The script under test -->
+  <script src="index.js"></script>
+
+</body>
+</html>
+```
+
+Just replace index.js with the script you would like to test.
+
 #### Additional Notes
-The above is a good place to start, but a middle layer is required to make the automation more extensible. The loactors will not be the same from website to website. While you could certainly write individual tests on a per retailer basis, I suggest the following format instead (pseudocode being used here, proceed with caution).
+The above is a good place to start, but a middle layer is required to make the automation more extensible. The locators will not be the same from website to website. While you could certainly write individual tests on a per retailer basis, I suggest the following format instead (pseudocode being used here, proceed with caution).
 
 Map the CSS locators to a generic locator class.
 
