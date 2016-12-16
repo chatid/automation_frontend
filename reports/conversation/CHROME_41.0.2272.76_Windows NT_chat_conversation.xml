@@ -5,9 +5,13 @@
 
   <testsuite name="chat_conversation"
     errors="0" failures="0" hostname="" id="" package="conversation" skipped="0"
-    tests="1" time="27.65" timestamp="Tue, 29 Nov 2016 21:42:51 GMT">
+    tests="1" time="18.56" timestamp="Mon, 12 Dec 2016 20:20:24 GMT">
   
-    <testcase name="Complete a chat conversation" time="27.65" assertions="7">
+    <testcase name="Complete a chat conversation" time="18.56" assertions="9">
+
+    
+
+    
 
     
 

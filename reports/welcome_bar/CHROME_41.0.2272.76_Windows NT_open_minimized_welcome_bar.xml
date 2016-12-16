@@ -5,9 +5,9 @@
 
   <testsuite name="open_minimized_welcome_bar"
     errors="0" failures="0" hostname="" id="" package="welcome_bar" skipped="0"
-    tests="1" time="11.96" timestamp="Tue, 29 Nov 2016 20:02:25 GMT">
+    tests="1" time="11.91" timestamp="Mon, 12 Dec 2016 20:20:38 GMT">
   
-    <testcase name="User is able to open a minimized Welcome Bar" time="11.96" assertions="9">
+    <testcase name="User is able to open a minimized Welcome Bar" time="11.91" assertions="9">
 
     
 

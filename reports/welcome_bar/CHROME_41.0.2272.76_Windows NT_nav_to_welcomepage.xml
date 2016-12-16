@@ -5,9 +5,9 @@
 
   <testsuite name="nav_to_welcomepage"
     errors="0" failures="0" hostname="" id="" package="welcome_bar" skipped="0"
-    tests="1" time="14.89" timestamp="Tue, 29 Nov 2016 20:02:16 GMT">
+    tests="1" time="12.29" timestamp="Mon, 12 Dec 2016 20:20:38 GMT">
   
-    <testcase name="Navigate to the Welcome Homepage from Welcome Bar" time="14.89" assertions="7">
+    <testcase name="Navigate to the Welcome Homepage from Welcome Bar" time="12.29" assertions="7">
 
     
 

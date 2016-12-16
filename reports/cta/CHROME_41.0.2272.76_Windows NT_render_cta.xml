@@ -5,9 +5,9 @@
 
   <testsuite name="render_cta"
     errors="0" failures="0" hostname="" id="" package="cta" skipped="0"
-    tests="1" time="8.764" timestamp="Tue, 29 Nov 2016 20:02:16 GMT">
+    tests="1" time="10.26" timestamp="Mon, 12 Dec 2016 20:20:24 GMT">
   
-    <testcase name="CTA Renders With Agents Available" time="8.764" assertions="2">
+    <testcase name="CTA Renders With Agents Available" time="10.26" assertions="2">
 
     
 
