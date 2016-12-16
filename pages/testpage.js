@@ -55,7 +55,6 @@ module.exports = {
             .keys('\uE007')
             /*.waitForElementPresent ( 'div.message.outgoing', general_timeout)
             .assert.containsText( 'div.message.outgoing', message)*/
-            .screenshot();
     },
 
     endChat: function () {
@@ -67,6 +66,7 @@ module.exports = {
             .click ( 'button.confirm.button-block.button-danger');
     },
 
+    //This function will not work until the chatbar iframe is given a tag. See BAR-538
     scrolltoMessagesWaiting: function () {
 
         return this.client
@@ -81,5 +81,19 @@ module.exports = {
             .useXpath()
             .click("//a[text()='Welcome']")
             .assert.title('Welcome');
+    },
+
+    skipSurvey: function () {
+        return this.client
+            .useXpath()
+            .click("//a[text()='Skip']")
+            .useCss()
+            .assert.containsText('span.pull-left', 'no longer active');
+    },
+
+    selectSurveyStars: function () {
+        return this.client
+            .useCss()
+            .click( 'li:nth-child(2)');
     }
 };
